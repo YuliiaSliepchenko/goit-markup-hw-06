@@ -10,7 +10,6 @@
   --bgr-darck-color: #2f303a;
   --start-color: rgba(47, 48, 58, 0);
   --end-color: rgba(47, 48, 58, 0.4);
-  --input-color:rgba(117, 117, 117, 0.5);
 
 }
 .section {
@@ -87,7 +86,6 @@ visibility: hidden;
   transform: translate(-50%,-50%);
   z-index: 888;
 transition: transform 250ms ease;
-padding: 41px 44px 39px 36px;
 }
 .close-modal{
   position: absolute;
@@ -106,113 +104,6 @@ padding: 41px 44px 39px 36px;
   right: 10px;
   top: 10px;
 }
-
-
-/* inputform */
-
-.form-row:not(:last-child){
-  margin-bottom: 10px;
-}
-.form-row-title:not(:first-child){
-  margin-top: 10px;
-}
-
-.form-row {
-  position: relative;
-  font-size:12px;
-  line-height:1.1666;
-font-weight: 400;
-letter-spacing: 0.01em;
-/* color: var(--secondary-text-color); */
-}
-
-.form-row-title{
-  display: block;
-  margin-bottom: 4px;
-  margin-top: 10px;
-  color: var(--secondary-text-color);
-}
-
-.form-row-input{
-  display: block;
-  max-width: 470px;
-  width: 100%;
-  height: 40px;
-  border: 1px solid 
-  rgba(33, 33, 33, 0.2);
-  border-radius: 4px;
-  padding: 12px 16px;
-  outline:none;
-  color:var(--input-color);
-}
-.form-row-input.form-story{
-  min-height: 120px;
-  width: 448px;
-  transform: auto;
-}
-
-.form-row-input::placeholder {
-  color: var(--secondary-text-color);
-}
-
-  .form-row-input:focus {
-    border: 1px solid var(--accent-color);
-  }
-
-  .form-form-input:focus + svg {
-      fill:var(--accent-color);
-    }
-
-  .form-row svg {
-    position: absolute;
-    top: 27px;
-    left: 12px;
-    transition: fill 0.3s ease-in-out;
-  }
-.modal h1{
-font-weight: 700;
-font-size: 20px;
-line-height: 1.15;
-text-align: center;
-display: block;
-letter-spacing: 0.03em;
-padding-bottom: 12px;
-
-color: var(--primary-text-color);
-  }
-
-  /* checkbox */
-
-  .privacy label {
-    position: relative;
-  }
-.privacy input {
-  display: none;
-}
-.privacy {
-  font-size: 14px;
-  line-height: 1.71px;
-  letter-spacing: 0.03em;
-  color: var(--secondary-text-color);
-}
-.privacy label::before {
-  cursor: pointer;
-  display: inline-block;
-  content: ""; 
-  width: 16px;
-  height: 15px;
-  margin-right: 7px;
-  border: 1px solid var(--bgr-darck-color);
-  border-radius: 2px;
-}
-.privacy input:checked + label::before {
-  background-color: var(--accent-color);
-  background-image: url(../images/icons/Vector.svg);
-  color: var(--primary-white-color);
-}
-
-
-
 
 .logo {
   color: #000000;
@@ -234,7 +125,6 @@ color: var(--primary-text-color);
 .site-nave {
   display: flex;
   align-items: center;
-   transition-duration: 1000ms; 
    transition: transform 250ms cubic-bezier(0.4,0,0.2,1); 
 }
 .site-nave.list {
@@ -269,7 +159,7 @@ header{ border-bottom: 1px solid #ececec;}
 .site-nave li {
   margin-right: 50px;
 }
-.linkcurrent{
+.site-nave .linkcurrent{
   color:var(--accent-color) ;
   text-decoration: none;
   transition:color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -286,15 +176,16 @@ header{ border-bottom: 1px solid #ececec;}
   bottom: 0;
   width: 100%;
   height: 4px;
-  background: var(--accent-color);
+   background: var(--accent-color); 
   border-radius: 4px;
-  /* position: absolute; */
-  /* transition: width 0.35s; */
-  /* transition-duration: 1000ms; */
+ 
 }
 .site-nave .item:last-child {
   margin-right: 0;
 }
+
+
+ 
 .feature-item-link:last-child {
   margin-right: 0;
   
@@ -617,13 +508,16 @@ button {
 }
 .icon-adress-link {
   fill: var(--secondary-text-color);
-  width: 20px;
-  height: 20px;
   transition:color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 .icon-adress-link:hover,
 .icon-adress-link:focus {
   color: var(--accent-color);
+}
+
+svg .icon-adress-link{
+  fill: currentColor;
 }
 
 .adress-head-link {
@@ -752,7 +646,8 @@ button {
   background-color: var(--bgr-grey-color);
   cursor: pointer;
   border: 0ch;
-  transition:color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .filter-btn:hover,
 .filter-btn:focus {
@@ -935,7 +830,7 @@ button {
   left: 0;
   transform: translateY(100%);
   height: 24%;
-  width: 100%;
+  min-width:  370px;
    /* opacity: 0; */
   font-weight: 700;
   font-size: 14px;
