@@ -436,6 +436,10 @@ header{ border-bottom: 1px solid #ececec;}
   text-decoration: none;
   transition:color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.foot_adress{
+  max-width: 231px;
+  width: 100%;
+}
 .adress-head .link:hover,
 .adress-head .link:focus {
   color: var(--accent-color);
