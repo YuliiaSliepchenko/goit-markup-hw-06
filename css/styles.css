@@ -152,13 +152,16 @@ letter-spacing: 0.01em;
 
 .form-row-input::placeholder {
   color: var(--secondary-text-color);
+  padding-right: 10px;
 }
 
   .form-row-input:focus {
     border: 1px solid var(--accent-color);
   }
-
-  .form-form-input:focus + svg {
+  .form-row-input .icon{
+    padding-right: 12px;
+  }
+  .form-row-input:focus + svg {
       fill:var(--accent-color);
     }
 
@@ -204,7 +207,7 @@ color: var(--primary-text-color);
   margin-right: 7px;
   border: 1px solid var(--bgr-darck-color);
   border-radius: 2px;
-  margin-top: 20px;
+ 
 }
 .privacy input:checked + label::before {
   background-color: var(--accent-color);
@@ -215,7 +218,7 @@ color: var(--primary-text-color);
  margin-top: 20px;
 color: var(--primary-white-color);}
 
-a .privacy{
+.privacy a{
   color: var(--accent-color);
 }
   
@@ -520,6 +523,27 @@ header{ border-bottom: 1px solid #ececec;}
   font-weight: 500;
   position: relative;
   
+}
+.send_btn{
+  min-width: 216px;
+  min-height: 50px;
+  display: inline-block;
+  border-radius: 4px;
+  padding: 6px 22px;
+  text-align: center;
+  border: 1px solid transparent;
+
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  transition-duration: 1s;
+  position: absolute;
+  margin-top: 30px;
+  margin-left: 118px;
 }
 
 .filter-btn {
