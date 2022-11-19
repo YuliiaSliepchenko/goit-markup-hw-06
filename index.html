@@ -728,27 +728,28 @@
             </li>
           </ul>
         </div>
-      </div>
-      <div class="modal">
-        <h1>Залиште свої дані, ми вам передзвонимо</h1>
-        
+      
+
+      <div class="footer-modal">  
+        <h3 class="title-footer">ПІДПИШІТЬСЯ НА РОЗСИЛКУ</h3>     
 
         <form action="#" class="modal-form">
 
           <div class="form-row">
-          <label for="user_name" class="form-row-title">Ім'я</label>
-
-          <div class="form-row-test">
-            <input type="text" class="form-row-input" name="user_name"
+          <label for="mail"></label>
+          <div class="form-row-footer">
+            <input type="text" class="form-row-inp" name="user_name"
              id="user_name"  
-             required minlength="3" maxlength="20">
-             <button class="send_btn" type="submit" <svg class="icon" width="24" height="24">
-              <use xlink:href="./images/sprite.svg#icon-Vector"></use>
-            </svg>>Відправити</button>
-             
-          </div>
+             required minlength="3" maxlength="20" placeholder="E-mail">
+         
+          <button class="send_btn" type="submit">Відправити<svg class="icon-footer " width="24" height="24">
+            <use xlink:href="./images/sprite.svg#icon-send"></use>
+          </svg></button>
+        </div>
           </div>
           </form>
+          </div>
+        </div>
     </footer>
     <script src="./js/modal.js"></script>
   </body>
