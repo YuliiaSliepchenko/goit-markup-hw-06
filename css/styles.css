@@ -1185,8 +1185,9 @@ color:rgba(255, 255, 255, 0.6);
 background: none;}
 
 .footer_send_btn{
-  min-width: 216px;
+  max-width: 200px;
   max-height: 50px;
+  width: 100%;
   display: inline-block;
   border-radius: 4px;
   padding: 6px 22px;
@@ -1219,7 +1220,8 @@ border-radius: 4px;
 font-weight: 400;
 letter-spacing: 0.01em;
 min-width: 578px;
-width: 100%;}
+width: 100%;
+}
 
 /* main background white:    #F5F5F5 */
 /* second text white         #FFFFFF */
