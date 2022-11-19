@@ -10,7 +10,6 @@
   --bgr-darck-color: #2f303a;
   --start-color: rgba(47, 48, 58, 0);
   --end-color: rgba(47, 48, 58, 0.4);
-  --input-color:rgba(117, 117, 117, 0.5);
 
 }
 .section {
@@ -112,6 +111,7 @@ padding: 41px 44px 39px 36px;
 
 .form-row:not(:last-child){
   margin-bottom: 10px;
+ 
 }
 .form-row-title:not(:first-child){
   margin-top: 10px;
@@ -141,7 +141,7 @@ letter-spacing: 0.01em;
   border: 1px solid 
   rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-  padding: 12px 16px;
+  padding: 12px 41px;
   outline:none;
   color:var(--input-color);
 }
@@ -149,17 +149,21 @@ letter-spacing: 0.01em;
   min-height: 120px;
   width: 448px;
   transform: auto;
+  padding: 16px 12px;
 }
 
 .form-row-input::placeholder {
   color: var(--secondary-text-color);
+  padding-right: 10px;
 }
 
   .form-row-input:focus {
     border: 1px solid var(--accent-color);
   }
-
-  .form-form-input:focus + svg {
+  .form-row-input .icon{
+    padding-right: 12px;
+  }
+  .form-row-input:focus + svg {
       fill:var(--accent-color);
     }
 
@@ -185,7 +189,6 @@ color: var(--primary-text-color);
 
   .privacy label {
     position: relative;
-    
   }
 .privacy input {
   display: none;
@@ -195,6 +198,9 @@ color: var(--primary-text-color);
   line-height: 1.71px;
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
+  margin-top: 20px;
+  text-align: center;
+  
 }
 .privacy label::before {
   cursor: pointer;
@@ -205,18 +211,21 @@ color: var(--primary-text-color);
   margin-right: 7px;
   border: 1px solid var(--bgr-darck-color);
   border-radius: 2px;
-  margin-top: 20px;
+ 
 }
 .privacy input:checked + label::before {
   background-color: var(--accent-color);
   background-image: url(../images/icons/Vector.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-  border: 1px sjlid var(--accent-color);
-  color: var(--primary-white-color);
+ background-repeat: no-repeat;
+ background-position: center;
+ border:1px solid var(--accent-color) ;
+
+color: var(--primary-white-color);}
+
+.privacy a{
+  color: var(--accent-color);
 }
-
-
+  
 
 
 .logo {
@@ -239,7 +248,6 @@ color: var(--primary-text-color);
 .site-nave {
   display: flex;
   align-items: center;
-   transition-duration: 1000ms; 
    transition: transform 250ms cubic-bezier(0.4,0,0.2,1); 
 }
 .site-nave.list {
@@ -274,7 +282,7 @@ header{ border-bottom: 1px solid #ececec;}
 .site-nave li {
   margin-right: 50px;
 }
-.linkcurrent{
+.site-nave .linkcurrent{
   color:var(--accent-color) ;
   text-decoration: none;
   transition:color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -291,15 +299,16 @@ header{ border-bottom: 1px solid #ececec;}
   bottom: 0;
   width: 100%;
   height: 4px;
-  background: var(--accent-color);
+   background: var(--accent-color); 
   border-radius: 4px;
-  /* position: absolute; */
-  /* transition: width 0.35s; */
-  /* transition-duration: 1000ms; */
+ 
 }
 .site-nave .item:last-child {
   margin-right: 0;
 }
+
+
+ 
 .feature-item-link:last-child {
   margin-right: 0;
   
@@ -519,7 +528,34 @@ header{ border-bottom: 1px solid #ececec;}
   position: relative;
   
 }
+.send_btn{
+  min-width: 216px;
+  min-height: 50px;
+  display: inline-block;
+  border-radius: 4px;
+  padding: 6px 22px;
+  text-align: center;
+  border: 1px solid transparent;
+  
 
+
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  transition-duration: 1s;
+  position: absolute;
+  margin-top: 30px;
+  margin-left: 118px;
+}
+.send_btn:hover,
+.send_btn:focus{
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+border-radius: 4px;
+}
 .filter-btn {
   padding: 6px 22px;
   border-radius: 4px;
@@ -622,13 +658,16 @@ button {
 }
 .icon-adress-link {
   fill: var(--secondary-text-color);
-  width: 20px;
-  height: 20px;
   transition:color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 .icon-adress-link:hover,
 .icon-adress-link:focus {
   color: var(--accent-color);
+}
+
+svg .icon-adress-link{
+  fill: currentColor;
 }
 
 .adress-head-link {
@@ -757,7 +796,8 @@ button {
   background-color: var(--bgr-grey-color);
   cursor: pointer;
   border: 0ch;
-  transition:color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .filter-btn:hover,
 .filter-btn:focus {
@@ -940,7 +980,7 @@ button {
   left: 0;
   transform: translateY(100%);
   height: 24%;
-  width: 100%;
+  min-width:  370px;
    /* opacity: 0; */
   font-weight: 700;
   font-size: 14px;
@@ -1084,7 +1124,23 @@ gap: 9px;
   color: var(--primary-white-color);
   margin-top: 12px;
 }
+.footer-send{
+  max-width: 570px;
+  width: 100%;
+  max-height: 581px;
+  height: 100%;
+  max-height: 86px;
+  position: relative;
+  right:25%;
+  bottom: 25%;
+  transform: translate(-50%,-50%);
+  z-index: 777;
 
+padding: 16px 12px 16px 12px;
+}
+footer .form-row-title{
+  color: var(--primary-white-color);
+}
 /* main background white:    #F5F5F5 */
 /* second text white         #FFFFFF */
 /* background button grey    #F5F4FA */
