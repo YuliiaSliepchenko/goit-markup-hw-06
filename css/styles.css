@@ -185,6 +185,7 @@ color: var(--primary-text-color);
 
   .privacy label {
     position: relative;
+    
   }
 .privacy input {
   display: none;
@@ -204,10 +205,14 @@ color: var(--primary-text-color);
   margin-right: 7px;
   border: 1px solid var(--bgr-darck-color);
   border-radius: 2px;
+  margin-top: 20px;
 }
 .privacy input:checked + label::before {
   background-color: var(--accent-color);
   background-image: url(../images/icons/Vector.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 1px sjlid var(--accent-color);
   color: var(--primary-white-color);
 }
 
