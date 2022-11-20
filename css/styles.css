@@ -550,8 +550,6 @@ header{ border-bottom: 1px solid #ececec;}
   padding: 6px 22px;
   text-align: center;
   border: 1px solid transparent;
-  
-
 
   color: var(--primary-white-color);
   background-color: var(--accent-color);
@@ -1145,7 +1143,8 @@ gap: 9px;
   margin-top: 20px;
 }
 .modal-form:not(:first-child){
-  gap: 12px;
+  display: flex;
+  
 }
 .form-row-inp{
   display: block;
@@ -1158,7 +1157,7 @@ padding: 15px 0 16px 15px;
 outline:none;
 color:rgba(255, 255, 255, 0.6);
 background: none;
-margin-left: 12px;}
+margin-right: 12px;}
 
 .footer_send_btn{
   max-width: 200px;
@@ -1184,8 +1183,8 @@ margin-left: 12px;}
   
 
 }
-.send_btn:hover,
-.send_btn:focus{
+.footer_send_btn:hover,
+.footer_send_btn:focus{
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 border-radius: 4px;
 }
@@ -1199,11 +1198,11 @@ letter-spacing: 0.01em;
 max-width: 570px;
 width: 100%;
 max-height: 50px;
-gap: 12px;
 height: 100%;
 background: none;
   transition: transform 250ms ease;
   padding: 0px 0px 0px 0px;
+  margin-left: 39px;
   }
 footer .form-row-title{
   color: var(--primary-white-color);
@@ -1217,6 +1216,26 @@ footer .form-row-title{
   right: 50%;
   top:50 %;
 
+}
+.footer_send_btn:checked + svg::after {
+  /* background-color: var(--accent-color); */
+  background-image: url(../images/icons/send.svg);
+ background-repeat: no-repeat;
+ background-position: center;
+ border:1px solid var(--accent-color) ;
+color: var(--primary-white-color);}
+
+.footer_send_btn svg::after {
+  cursor: pointer;
+  display: inline-block;
+  content: ""; 
+  width: 16px;
+  height: 15px;
+  border: 1px solid var(--bgr-darck-color);
+  border-radius: 2px;}
+
+.privacy a{
+  color: var(--accent-color);
 }
 
 /* main background white:    #F5F5F5 */
