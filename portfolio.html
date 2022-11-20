@@ -285,7 +285,7 @@
     </main>
     <footer class="footer">
       <div class="conteiner footer-items">
-        <div>
+        <div class="foot_adress">
           <a class="logo-link" href="index.html"
             >Web<span class="logo-footer">Studio</span></a
           >
@@ -321,6 +321,7 @@
             </ul>
           </address>
         </div>
+
         <div class="footer-social">
           <h3 class="title-footer">ПРИЄДНУЙТЕСЬ</h3>
           <ul class="footer-icons-social">
@@ -377,7 +378,27 @@
             </li>
           </ul>
         </div>
-      </div>
+      
+
+      <div class="form-row-footer">  
+        <h3 class="title-footer">ПІДПИШІТЬСЯ НА РОЗСИЛКУ</h3>     
+
+        <form action="#" class="modal-form">
+
+          <label for="mail"></label>
+         
+            <input type="text" class="form-row-inp" name="user_name"
+             id="user_name"  
+             required minlength="3" maxlength="20" placeholder="E-mail">
+         
+          <button class="footer_send_btn" type="submit">Підписатися <svg class="icon-footer" width="24" height="24">
+            <use xlink:href="./images/sprite.svg#icon-send"></use>
+          </svg></button>
+    
+          </form>
+        </div>
+          </div>
+        </div>
     </footer>
   </body>
 </html>

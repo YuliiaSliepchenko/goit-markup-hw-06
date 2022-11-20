@@ -1210,11 +1210,11 @@ footer .form-row-title{
 
 .icon-footer{
   display: flex;
-  align-items: center;
-  justify-content: center;
+ 
+  
   position: absolute;
-  right: 50%;
-  top:50%;
+  right: 8%;
+  top: 25%;
   color: var(--primary-white-color);
 }
 /* .footer_send_btn:checked + svg::after {
