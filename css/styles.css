@@ -105,21 +105,7 @@ padding: 41px 44px 39px 36px;
   right: 10px;
   top: 10px;
 }
-.footer-modal{
-max-width: 570px;
-width: 100%;
-max-height: 50px;
-height: 100%;
-background: none;
-/* position: relative; */
-/* left: 60%;
-top: 0%;
-bottom: 25%;
-transform: translate(-25%,-25%);
-z-index: 888; */
-transition: transform 250ms ease;
-padding: 0px 0px 0px 0px;
-}
+
 .form-row-test::after{
   gap: 12px;
   background-image: url(../images/icons/Vector.svg);
@@ -178,14 +164,14 @@ letter-spacing: 0.01em;
 
 .form-row-input::placeholder {
   color: var(--secondary-text-color);
-  padding-right: 10px;
+  /* padding-right: 10px; */
 }
 
   .form-row-input:focus {
     border: 1px solid var(--accent-color);
   }
   .form-row-input .icon{
-    padding-right: 12px;
+     padding-right: 12px; 
   }
   .form-row-input:focus + svg {
       fill:var(--accent-color);
@@ -1153,28 +1139,13 @@ gap: 9px;
   margin-top: 12px;
 }
 
-footer .form-row-title{
-  color: var(--primary-white-color);
-}
-.form-row-footer{
-  display: flex;
-  max-width: 570px;
-  width: 100%;
-  gap: 12px;
-}
-.icon-footer{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  right: 50%;
-  top:50 %;
 
-}
 .modal-form{
   display: flex;
-  gap: 12px;
   margin-top: 20px;
+}
+.modal-form:not(:first-child){
+  gap: 12px;
 }
 .form-row-inp{
   display: block;
@@ -1186,7 +1157,8 @@ border-radius: 4px;
 padding: 15px 0 16px 15px;
 outline:none;
 color:rgba(255, 255, 255, 0.6);
-background: none;}
+background: none;
+margin-left: 12px;}
 
 .footer_send_btn{
   max-width: 200px;
@@ -1219,12 +1191,32 @@ border-radius: 4px;
 }
 .form-row-footer {
   position: relative;
+  display: block;
   font-size:12px;
   line-height:1.1666;
 font-weight: 400;
 letter-spacing: 0.01em;
-min-width: 578px;
+max-width: 570px;
 width: 100%;
+max-height: 50px;
+gap: 12px;
+height: 100%;
+background: none;
+  transition: transform 250ms ease;
+  padding: 0px 0px 0px 0px;
+  }
+footer .form-row-title{
+  color: var(--primary-white-color);
+}
+
+.icon-footer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: 50%;
+  top:50 %;
+
 }
 
 /* main background white:    #F5F5F5 */
