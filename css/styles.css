@@ -1214,25 +1214,25 @@ footer .form-row-title{
   justify-content: center;
   position: absolute;
   right: 50%;
-  top:50 %;
-
+  top:50%;
+  color: var(--primary-white-color);
 }
-.footer_send_btn:checked + svg::after {
+/* .footer_send_btn:checked + svg::after {
   /* background-color: var(--accent-color); */
-  background-image: url(../images/icons/send.svg);
+  /* background-image: url(../images/icons/send.svg);
  background-repeat: no-repeat;
  background-position: center;
  border:1px solid var(--accent-color) ;
-color: var(--primary-white-color);}
+color: var(--primary-white-color);} */
 
-.footer_send_btn svg::after {
+/* .footer_send_btn svg::after {
   cursor: pointer;
   display: inline-block;
   content: ""; 
   width: 16px;
   height: 15px;
   border: 1px solid var(--bgr-darck-color);
-  border-radius: 2px;}
+  border-radius: 2px;} */ 
 
 .privacy a{
   color: var(--accent-color);
