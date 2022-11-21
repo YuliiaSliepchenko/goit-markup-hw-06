@@ -130,7 +130,6 @@ color: var(--primary-white-color);
 }
 
 .form-row {
-  position: relative;
   font-size:12px;
   line-height:1.1666;
 font-weight: 400;
@@ -183,9 +182,9 @@ letter-spacing: 0.01em;
 
   .form-row svg {
     position: absolute;
-    top: 50px;
+    top: 20px;
    transform:translateY(-50%);
-    
+   left: 12px;
     transition: fill 0.3s ease-in-out;
   }
 .modal h1{
@@ -222,7 +221,7 @@ color: var(--primary-text-color);
   display: inline-block;
   content: ""; 
   width: 16px;
-  height: 15px;
+  height: 16px;
   margin-right: 7px;
   border: 1px solid var(--bgr-darck-color);
   border-radius: 2px;
@@ -1171,11 +1170,12 @@ margin-right: 12px;}
   display: inline-block;
   border-radius: 4px;
   padding: 6px 22px;
-  text-align: center;
+  /* text-align: center; */
+  text-align: start;
+  left: 12px;
+  padding: 10px 27px;
   border: 1px solid transparent;
   
-
-
   color: var(--primary-white-color);
   background-color: var(--accent-color);
 
@@ -1216,7 +1216,7 @@ footer .form-row-title{
 .icon-footer{
   display: flex;
   position: absolute;
-  right: 8%;
+  right: 15%;
   top: 25%;
   color: var(--primary-white-color);
 }
