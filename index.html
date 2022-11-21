@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="uk">
   <head>
-    <meta charset="UTF-8" >
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" >
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" >
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin >
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
-    >
-    <link rel="stylesheet" href="./css/modern-normalize.css" >
-    <link rel="stylesheet" href="./css/styles.css" >
+    />
+    <link rel="stylesheet" href="./css/modern-normalize.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
 
   <body>
@@ -155,38 +155,35 @@
       <section class="section">
         <div class="action-photo conteiner">
           <h2 class="title">Чим ми займаємося</h2>
-          
-          
-              <ul class="list">
+
+          <ul class="list">
             <li class="item-photo__action">
               <img
                 src="./images/functions-1.jpg"
                 alt="Набирає код на клавіатурі"
-                width="370">
-                <p class="discrip-photo__action">Десктопні додатки
-                   </p>
-                  </li>
-                  
-           
+                width="370"
+              />
+              <p class="discrip-photo__action">Десктопні додатки</p>
+            </li>
+
             <li class="item-photo__action">
               <img
                 src="./images/functions-2.jpg"
                 alt="Синхронізує з телефоном"
-                width="370">
-              <p class="discrip-photo__action">Мобільні додатки
-              </p>
-              </li>
-           
+                width="370"
+              />
+              <p class="discrip-photo__action">Мобільні додатки</p>
+            </li>
+
             <li class="item-photo__action">
               <img
                 src="./images/functions-3.jpg"
                 alt="Обирає палітру на планшеті"
-                width="370">
-              <p class="discrip-photo__action">Дизайнерські рішення
-              </p>
+                width="370"
+              />
+              <p class="discrip-photo__action">Дизайнерські рішення</p>
             </li>
           </ul>
-         
         </div>
       </section>
 
@@ -199,7 +196,7 @@
                 src="./images/team-1.jpg"
                 alt="Ігор Дем'яненко"
                 width="270"
-              >
+              />
 
               <div class="our-descr">
                 <h3 class="title">Ігор Дем'яненко</h3>
@@ -270,7 +267,7 @@
             </li>
 
             <li class="items">
-              <img src="./images/team-2.jpg" alt="Ольга Рєпіна" width="270" >
+              <img src="./images/team-2.jpg" alt="Ольга Рєпіна" width="270" />
               <div class="our-descr">
                 <h3 class="title">Ольга Рєпіна</h3>
                 <p class="discription">Frontend Developer</p>
@@ -339,7 +336,7 @@
             </li>
 
             <li class="items">
-              <img src="./images/team-3.jpg" alt="Микола Тарасов" width="270" >
+              <img src="./images/team-3.jpg" alt="Микола Тарасов" width="270" />
               <div class="our-descr">
                 <h3 class="title">Микола Тарасов</h3>
                 <p class="discription">Marketing</p>
@@ -412,7 +409,7 @@
                 src="./images/team-4.jpg"
                 alt="Михайло Єрмаков"
                 width="270"
-              >
+              />
               <div class="our-descr">
                 <h3 class="title">Михайло Єрмаков</h3>
                 <p class="discription">UI Designer</p>
@@ -567,74 +564,99 @@
           </ul>
         </div>
       </section>
+
       <div class="modal-wrap is-hidden" data-modal>
         <div class="modal">
-          <h1>Залиште свої дані, ми вам передзвонимо</h1>
-          <button data-modal-close type="button" class="close-modal" > 
+          <p>Залиште свої дані, ми вам передзвонимо</p>
+          <button data-modal-close type="button" class="close-modal">
             <svg class="cross" width="11" height="11">
-            <use xlink:href="../images/sprite.svg#icon-cross"></use>
-          </svg>
-        </button> 
+              <use xlink:href="../images/sprite.svg#icon-cross"></use>
+            </svg>
+          </button>
 
           <form action="#" class="modal-form">
-
             <div class="form-row">
-            <label for="user_name" class="form-row-title">Ім'я</label>
-            <div class="form-row-test">
-              <input type="text" class="form-row-input" name="user_name"
-               id="user_name"  
-               required minlength="3" maxlength="20">
-               <svg class="icon" width="18" height="18">
-                <use xlink:href="./images/sprite.svg#icon-person"></use>
-              </svg>
+              <label for="user_name" class="form-row-title">Ім'я</label>
+              <div class="form-row-test">
+                <input
+                  type="text"
+                  class="form-row-input"
+                  name="user_name"
+                  id="user_name"
+                  required
+                  minlength="3"
+                  maxlength="20"
+                />
+                <svg class="icon" width="18" height="18">
+                  <use xlink:href="./images/sprite.svg#icon-person"></use>
+                </svg>
+              </div>
             </div>
 
             <div class="form-row">
               <label for="user_phone" class="form-row-title">Телефон</label>
               <div class="form-row-test">
-                <input type="text" class="form-row-input" name="user_phone"
-                 id="user_phone"  
-                 required minlength="13" maxlength="13">
-                 <svg class="icon" width="18" height="18">
+                <input
+                  type="text"
+                  class="form-row-input"
+                  name="user_phone"
+                  id="user_phone"
+                  required
+                  minlength="13"
+                  maxlength="13"
+                />
+                <svg class="icon" width="18" height="18">
                   <use xlink:href="./images/sprite.svg#icon-phone"></use>
                 </svg>
               </div>
+            </div>
 
-              <div class="form-row">
-                <label for="user_mail" class="form-row-title">Пошта</label>
-                <div class="form-row-test">
-                  <input type="email" class="form-row-input" name="user_mail"
-                   id="user_mail"  
-                   required minlength="3" maxlength="20">
-                   <svg class="icon" width="18" height="18">
-                    <use xlink:href="./images/sprite.svg#icon-email"></use>
-                  </svg>
-                </div>
-                
-                <div class="form-row">
-                  <label for="user_text" class="form-row-title">Коментар</label>
-                  <div class="form-row-test">
-                    <textarea name="user_text" id="user_text" value="textarea" 
-                    placeholder="Введіть текст" cols="30" rows="10" 
-                    required minlength="3" maxlength="999" 
-                    class="form-row-input form-story"></textarea>
-                  
-                  </div>
-                  <div class="privacy">
-                    <input type="checkbox" name="mail_send" id="mail_send">
-                    <label for="mail_send">Погоджуюся з розсилкою та приймаю </label>
-                    <a href="#" target="_blank" rel="nooper noreferrer">Умови договору</a>
-                  </div>
-                  <button class="send_btn" type="submit"> Відправити
-            
-                </button>
-          </div>
+            <div class="form-row">
+              <label for="user_mail" class="form-row-title">Пошта</label>
+              <div class="form-row-test">
+                <input
+                  type="email"
+                  class="form-row-input"
+                  name="user_mail"
+                  id="user_mail"
+                  required
+                  minlength="3"
+                  maxlength="20"
+                />
+                <svg class="icon" width="18" height="18">
+                  <use xlink:href="./images/sprite.svg#icon-email"></use>
+                </svg>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <label for="user_text" class="form-row-title">Коментар</label>
+              <div class="form-row-test">
+                <textarea
+                  name="user_text"
+                  id="user_text"
+                  placeholder="Введіть текст"
+                  cols="30"
+                  rows="10"
+                  required
+                  minlength="3"
+                  maxlength="999"
+                  class="form-row-input form-story"
+                ></textarea>
+              </div>
+            </div>
+
+            <div class="privacy">
+              <input type="checkbox" name="mail_send" id="mail_send" />
+              <label for="mail_send">Погоджуюся з розсилкою та приймаю </label>
+              <a href="#" target="_blank" rel="nooper noreferrer"
+                >Умови договору</a
+              >
+            </div>
+            <button class="send_btn" type="submit">Відправити</button>
           </form>
         </div>
-        </div>
-
-
-
+      </div>
     </main>
 
     <footer class="footer">
@@ -732,27 +754,33 @@
             </li>
           </ul>
         </div>
-      
 
-      <div class="form-row-footer">  
-        <h3 class="title-footer">ПІДПИШІТЬСЯ НА РОЗСИЛКУ</h3>     
+        <div class="form-row-footer">
+          <h3 class="title-footer">ПІДПИШІТЬСЯ НА РОЗСИЛКУ</h3>
 
-        <form action="#" class="modal-form">
+          <form action="#" class="modal-form">
+            <label for="user_mail"></label>
 
-          <label for="mail"></label>
-         
-            <input type="text" class="form-row-inp" name="user_name"
-             id="user_name"  
-             required minlength="3" maxlength="20" placeholder="E-mail">
-         
-          <button class="footer_send_btn" type="submit">Підписатися <svg class="icon-footer" width="24" height="24">
-            <use xlink:href="./images/sprite.svg#icon-send"></use>
-          </svg></button>
-    
+            <input
+              type="text"
+              class="form-row-inp"
+              name="user_coments"
+              id="user_coments"
+              required
+              minlength="3"
+              maxlength="20"
+              placeholder="E-mail"
+            />
+
+            <button class="footer_send_btn" type="submit">
+              Підписатися
+              <svg class="icon-footer" width="24" height="24">
+                <use xlink:href="./images/sprite.svg#icon-send"></use>
+              </svg>
+            </button>
           </form>
         </div>
-          </div>
-        </div>
+      </div>
     </footer>
     <script src="./js/modal.js"></script>
   </body>
