@@ -111,7 +111,7 @@ padding: 41px 44px 39px 36px;
 
 .form-row-test::after{
   gap: 12px;
-  background-image: url(../images/icons/Vector.svg);
+  background-image: url(../images/icons/cross.svg);
  background-repeat: no-repeat;
  background-position: center;
  border:1px solid var(--accent-color) ;
