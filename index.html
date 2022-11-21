@@ -614,9 +614,11 @@
                 <div class="form-row">
                   <label for="user_text" class="form-row-title">Коментар</label>
                   <div class="form-row-test">
-                    <input type="text" class="form-row-input form-story" name="user_text"
-                     id="user_text" value="Введіть текст" placeholder="Text"
-                     required minlength="3" maxlength="999">
+                    <textarea name="user_text" id="user_text" value="textarea" 
+                    placeholder="Введіть текст" cols="30" rows="10" 
+                    required minlength="3" maxlength="999" 
+                    class="form-row-input form-story"></textarea>
+                  
                   </div>
                   <div class="privacy">
                     <input type="checkbox" name="mail_send" id="mail_send">
